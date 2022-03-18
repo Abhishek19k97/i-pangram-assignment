@@ -1,38 +1,114 @@
 .App {
+  display: flex;
+  justify-content: center;
+  color: rgb(82 72 72);
+  font-family: sans-serif;
+}
+
+h2{
+  color: #606ba3;
+  margin: 0px;
+}
+
+p{
+  margin: 0px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+input + label {
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea,
+select {
+  display: block;
+  width: 400px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* margin-bottom: 20px; */
+}
+
+.input-text {
+  display: inline-block;
+  height: 75px;
+  width: -webkit-fill-available;
+} 
+
+.form-container{
+  align-content: center;
+  padding: 40px 325px 40px 325px;
+  border: solid 2px 
+}
+
+.form-container-header{
+  text-align: center;
+  padding-left: 182px;
+  padding-right: 182px;
+  margin-bottom: 30px;
+}
+
+.form-container-body{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container-form-body{
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control {
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.radio-space-around {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.checkbox {
+  margin-bottom: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  background-color:#3f51b5;
+  display: block;
+    border-radius: 50%;
+    color: white;
+    font-weight: 1000;
+    height: 38px;
+    width: 38px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.add-button-container{
+  text-align: -webkit-center;
+  margin-bottom: 10px;
+}
+
+.button-cotainer{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.error {
+  color: red;
 }
